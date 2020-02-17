@@ -1,0 +1,45 @@
+• What’s wrong with the following while loop?
+int counter = 0;
+while {counter > 100}
+if (counter % 2 == 1)
+cout << counter << " is odd." << endl;
+else
+cout << counter << " is odd." << endl;    # Should be "even" instead of "odd".
+++counter; // same as: counter = counter + 1;
+
+
+• Describe the output produced by these while loops:
+a) int K = 5;
+int I = -2;
+while (I <= K) {
+I = I + 2;
+--K; // same as: K = K - 1;
+cout << (I + K) << endl;
+}
+# OUTPUT IS 6 >>> (I=2, K=3, 2 <= 3 is True, and 4+2 is 6)
+
+
+b) int number = 4;
+while (number >= 0)
+--number; // same as: number = number - 1;
+cout << number << endl;
+# OUTPUT IS {4 3 2 1 0}
+
+#1
+while xValue >= 0:
+  print(xValue)
+  xValue -= 0.5
+
+#2
+int = 1
+while int <= 25:
+    print(int**2)
+    int+=2
+    
+#3
+while True:
+    # block of code
+    
+#4
+while True:
+    input('Enter: ')
