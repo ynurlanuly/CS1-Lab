@@ -16,7 +16,7 @@ I = I + 2;
 --K; // same as: K = K - 1;
 cout << (I + K) << endl;
 }
-# OUTPUT IS 6 >>> (I=2, K=3, 2 <= 3 is True, and 4+2 is 6)
+# OUTPUT IS 6 >>> (I=2, K=3, (2 <= 3) is True, and 4+2 is 6)
 
 
 b) int number = 4;
