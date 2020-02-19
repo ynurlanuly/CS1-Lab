@@ -1,0 +1,57 @@
+#1 Print all elements of a list using for loop.
+fruits = ['Apple', 'Banana', 'Strawberry', 'Orange']
+for item in fruits:
+  print(item)
+ 
+#2
+input_from_user = input('')
+list = []
+for i in input_from_user.split():
+  list.append(i)
+print(list)
+
+input_delete = input('Choose an item to delete: ')
+if input_delete in list:
+  list.remove(input_delete)
+  print(list)
+else:
+  print('no item')
+  
+
+#3
+for i in range(1,13):
+  for j in range(1,15):
+    print(i,'X',j,'=',i*j)
+
+#4
+num = [1,2,3,4]
+square_num = [i**2 for i in num]
+print(square_num)
+
+#5
+odd_nums = [i for i in range(1,101) if i%2!=0]
+print(odd_nums)
+
+even_nums = [j for j in range(1,101) if j%2==0]
+print(even_nums)
+
+#6 
+odd_nums = [i for i in range(1,101) if i%2!=0]
+
+even_nums = [i for i in range(1,101) if i%2==0]
+
+all_nums = odd_nums + even_nums
+
+divisible_by_4 = [k for k in all_nums if k%4==0]
+
+divisible_by_6 = [k for k in all_nums if k%6==0]
+
+divisible_by_8 = [k for k in all_nums if k%8==0]
+
+divisible_by_10 = [k for k in all_nums if k%10==0]
+p
+divisible_by_3 = [k for k in all_nums if k%3==0]
+
+divisible_by_5 = [k for k in all_nums if k%5==0]
+
+divisible_by_7 = [k for k in all_nums if k%7==0]
