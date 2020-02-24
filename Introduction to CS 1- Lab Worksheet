@@ -1,0 +1,56 @@
+# 1 Exercise
+while True:
+  num = int(input("Enter a number: "))
+  if num%2==0:
+    print("Number is even.")
+  elif num%2!=0:
+    print("Number is odd.")
+ 
+# Extras
+# a)
+num = int(input("Enter a number? "))
+if num%4==0:
+  print("This number is a multiply of 4.")
+# b)
+
+check = int(input('Enter a first number: '))
+num = int(input('Enter a second number: '))
+if check%num==0:
+  print("Divides evenly.")
+else:
+  print("Not evenly")
+
+# 2 Exercise
+num = int(input("Enter a number: "))
+if 0<num<10:
+  num = int(input("Enter a number: "))
+elif 10<num<20:
+  string = input("Type something: ")
+elif 20<num<100:
+  print("Your choice is between 20-100.")
+else:
+  print("Just practicing.")
+  
+# 3 Exercise
+vowels = ['a','e','i','o','u']
+string = input("Type: ")
+if string in vowels:
+  print("You won!")
+else:
+  print("You lost!")
+ 
+# 4 Exercise
+first_num = int(input("x: "))  #Input x
+second_num = int(input("y: "))  #Input y
+result = (first_num+second_num)**2  # (x+y)*(x+y)
+print("The result is ",result) 
+
+#5 Exercise
+
+num1 = int(input("First number: ")) # Ask user the first number
+num2 = int(input("Second number: ")) # Ask user the second number
+num3 = num1           #Swapping
+num1 = num2           # Now num1 is num2 
+num2 = num3           # Now num2 is num1
+print(num1)            
+print(num2)
