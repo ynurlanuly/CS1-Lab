@@ -1,0 +1,41 @@
+#1
+def num(x,y,z):
+  return max(x,y,z) 
+print(num(15,2,20))
+#2
+def multiply(list):
+  total=1
+  for i in list:
+    total*=i
+  return total
+
+print(multiply((8,2,3,-1,7)))
+#3
+def is_prime(x):
+  if x<2:
+    return "Not Prime Number."
+  elif x==2:
+    return "Prime Number."
+  else:
+    for i in range(2,x):
+      if x%i==0:
+        return "Not Prime Number."
+
+print(is_prime(49))
+#4
+def perfect_number(x):
+  sum=0
+  for i in range(1,x):
+    if x%i==0:
+      sum+=i
+  return sum==x
+print(perfect_number(6))
+#5
+def pascal_triangle(n):
+  trow=[1]
+  y=[0]
+  for x in range(max(n,0)):
+    print(trow)
+    trow=[l+r for l,r in zip(trow+y, y+trow)]
+  return n>=1
+pascal_triangle(6)
