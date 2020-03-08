@@ -1,0 +1,99 @@
+# Sleep_in
+def sleep_in(weekday, vacation):
+  if weekday == False and vacation == False:
+    return True
+  elif weekday == True and vacation == False:
+    return False
+  elif weekday == False and vacation == True:
+    return True
+  else:
+    return True
+
+# Monkey_trouble
+def monkey_trouble(a_smile, b_smile):
+  if a_smile==True and b_smile==True:
+    return True
+  elif a_smile==False and b_smile==False:
+    return True
+  elif a_smile==True and b_smile==False:
+    return False
+  else:
+    return False
+
+# Sum_double
+def sum_double(a, b):
+  if a == b:
+    return (a+b)*2
+  else:
+    return a+b
+
+# diff21
+def diff21(n):
+  if n>21:
+    return (n-21)*2
+  else:
+    return 21-n
+    
+# Parrot_trouble
+def parrot_trouble(talking, hour):
+  if talking == True and (hour<7 or hour>20):
+    return True
+  elif talking == True and (hour>=7 or hour<19):
+    return False
+  elif talking == False and (hour>7 or hour<20):
+    return False
+
+# Makes 10
+def makes10(a, b):
+  if a==10 or b==10:
+    return True
+  elif (a+b) == 10:
+    return True
+  else:
+    return False
+
+# Near hundred
+def near_hundred(n):
+  if 90<=n<=110 or 190<=n<=210:
+    return True
+  else:
+    return False
+
+# pos_neg
+def pos_neg(a, b, negative):
+  if a>0 and b<0 and negative == False:
+    return True
+  elif a<0 and b>0 and negative == False:
+    return True
+  elif a<0 and b<0 and negative == True:
+    return True
+  else:
+    return False
+
+# Not string
+def not_string(str):
+  if 'not' not in str:
+    return 'not '+ str
+  elif 'not' not in str[0:3]:
+    return 'not '+str
+  elif 'not' in str:
+    return str
+
+# Missing_char
+def missing_char(str, n):
+  new=str.replace(str[n],'')
+  return new
+
+# Front_back
+def front_back(str):
+  if len(str)<=1:
+    return str
+  mid = str[1:len(str)-1]
+  return str[len(str)-1]+mid + str[0]
+
+# front3
+def front3(str):
+  if len(str)<3:
+    return str*3
+  else:
+    return str[0:3]*3
