@@ -1,0 +1,27 @@
+# 1 Exercise
+def func1():
+  str = input('Enter: ')
+  return len(str)
+
+print(func1())
+
+# 2 Exercise
+def sum(x):
+  if x == 0:
+    return 0
+  else:
+    return x + sum(x-1)
+print(sum(10))
+
+# 3 Exercise
+str = "pynative"
+print(str[::2])
+
+# 4 Exercise
+list = [1,2,3,4,7]
+def check(list):
+  if list[0] == list[-1]:
+    return True
+  else:
+    return False
+print(check(list))
